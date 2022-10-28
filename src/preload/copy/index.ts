@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log(document.querySelectorAll('div'), '==')
-})
+import crackCopy from './core'
 
+crackCopy()
