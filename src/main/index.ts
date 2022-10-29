@@ -7,8 +7,8 @@ import Config from './config'
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
+    width: 700,
+    height: 500,
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux'
