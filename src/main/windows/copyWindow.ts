@@ -8,7 +8,8 @@ export default function createCopyWindow(url: string) {
     webPreferences: {
       preload: path.join(__dirname, '../preload/copy.js'),
       sandbox: false,
-      webSecurity: false
+      webSecurity: true,
+      allowRunningInsecureContent: true // 允许http请求
     }
   })
   copyWindow.loadURL(url)
